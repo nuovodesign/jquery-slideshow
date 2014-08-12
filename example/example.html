@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>Custom slideshow</title>
+
+        <link rel="stylesheet" type="text/css" href="../jquery-slideshow.css">
+
+        <script type="text/javascript" src="../lib/jquery-2.1.0.js"></script>
+        <script type="text/javascript" src="../lib/TweenMax.min.js"></script>
+        <script type="text/javascript" src="../lib/jquery.knob.min.js"></script>
+
+          <style type='text/css'>
+            html, body {
+                height:100%;
+                width:100%;
+                margin:0;
+                border:0;
+            }
+            #container {
+                position: absolute;
+                width: 100%;
+                max-height: 430px;
+                top:10px;
+                bottom:10px;
+                background-color: #f8f8f8;
+                overflow: hidden;
+            }            
+            </style>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            $(window).load(function() {
+                $('#slider').slideshow();
+            });                
+            //]]>
+        </script>
+
+    </head>
+    <body>
+        <div id="container">
+            <div id="slider">
+                <div class="slider">
+                    <div>
+                        <img width="640" height="480" src="http://lorempixel.com/640/480/city/" alt="foto">
+                    </div>
+                    <div>
+                        <img width="640" height="480" src="http://lorempixel.com/640/480/sports/" alt="DSC_1257c">
+                    </div>
+                    <div>
+                        <img width="640" height="480" src="http://lorempixel.com/640/480/food/" alt="DSC_1251">
+                    </div>
+                    <div>
+                        <img width="640" height="480" src="http://lorempixel.com/640/480/nature/" alt="DSC_1188-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../jquery-slideshow.js"></script>
+    </body>
+</html>

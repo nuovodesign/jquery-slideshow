@@ -1,0 +1,60 @@
+.slidercontainer {
+    position: relative;
+    float: right;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    text-align: right;
+    background-color: #f8f8f8;
+}
+
+.slidernav {
+    position: absolute;
+    display: table;
+    z-index: 2;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -50px;
+}
+.sliderprev, .slidernext, .slidercontrol {
+    position: relative;
+    float: left;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background: white;
+}
+.sliderprev {
+    background:url('./images/slidernav.png') no-repeat;
+}
+.slidernext {
+    background:url('./images/slidernav.png') no-repeat -60px 0;
+}
+.slidercontrol {
+    background:url('./images/slidernav.png') no-repeat -30px 0;
+    margin: 0 5px;
+}
+.slidercontrol canvas {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+}
+.slider {
+    position: relative;
+    height: 100%;
+}
+.slider > div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}               
+.slider .imagetitle, .slider .imagedescription {
+    display:none;
+}
+.slider img {
+    display: table;
+    margin: auto;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+}
