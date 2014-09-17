@@ -37,7 +37,7 @@
                         TweenMax.killTweensOf(trgt);
                         nextSlider(trgt);
                         paused = true;
-                        $('.slidercontrol').css({
+                        $slider.find('.slidercontrol').css({
                             'background-position' : '-30px -30px'
                         });
                         tl.pause();
